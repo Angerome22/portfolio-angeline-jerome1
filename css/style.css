@@ -1,0 +1,298 @@
+/****** General ***********/
+* {
+    font-family: "Roboto";
+  }
+  
+  :root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+  }
+ 
+  body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color:#f0ffff	;
+  }
+  
+  .main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .section-title {
+    margin: 0;
+    font-size: 42px;
+    text-align: center;
+  }
+  
+  .card {
+   
+    border-radius: 20px;
+    padding: 5px;
+   
+  }
+  
+  .card-title {
+    font-size: 16px;
+  }
+  
+  
+  
+  
+  /****** presentation ***********/
+  
+   .hebergements .presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px; 
+    background-color: #EFE3C7;
+  }
+
+   .hebergements .presentation img {
+    width: 220px;
+    height:auto;
+   }
+
+   .hebergements .presentation p {
+    font-size: 20px;
+   } 
+   .apropos h2 {
+    font-size: 30px;
+    font-weight: 700;
+   }
+
+/****** Compétences ***********/
+
+  .competences {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 35px;
+      height: 700px;
+      background-color: #E3A253;
+      
+  }
+  
+   i  {
+    width: 50px;
+    height: 50px;
+    padding : 20px 20px;
+    color: blue;
+  }
+
+  .fa-html {
+    width: 25px;
+  }
+
+
+  
+  /****** Hebergements ***********/
+  
+  .hebergements .section-title { 
+    text-align: center;   
+    padding-bottom: 30px;
+  }
+  
+  .hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    background-color: #9FCDA8;
+    padding-top: 30px;
+    height: 1000px;
+  }
+  
+  .hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;    
+    background-color: #C7DDC5;
+    width: 31.5%;
+    padding-bottom: 30px;
+
+  }
+
+  .hebergements .card img {
+    width: 380px;
+    align-self: center;
+    height: 300px;
+    border-radius: 15px 15px 15px 15px;
+    padding-top: 20px;
+    object-fit: cover;
+  }
+
+  .hebergements .card a {
+    align-self: center;
+    padding: 30px 30px;
+  }
+  
+  .hebergements .card-title {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  
+  /****** Footer ***********/
+  footer {
+    background-color: var(--main-bg-color);
+    margin-top: 30px;
+  }
+  
+  .footer {
+    height: 163px;
+    display: flex;
+    margin: 0;
+  }
+
+ .footer .logo {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .a-propos,
+  .nos-hebergements,
+  .assistance {
+    width: 33.3%;
+    margin: 0;
+  }
+  
+  footer .a-propos,
+  footer .nos-hebergements,
+  footer .assistance {
+    padding: 20px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+  }
+  
+  .footer ul li {
+    padding-bottom: 15px;
+  }
+  
+  .a-propos h3,
+  .nos-hebergements h3,
+  .assistance h3 {
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 0px;
+  }
+  
+  /* Le code ci-dessous correspond à la version responsive uniquement */
+  
+  /****** Media queries ***********/
+  /* Medium devices (tablets, less/equal than 1024px) */
+  @media (max-width: 1024px) {
+  
+    .hebergements {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+   
+  }
+  
+  /* Small devices (phones, less than 768px) */
+  @media (max-width: 767.98px) and (min-width: 320px) {
+
+    .main-container {
+      padding: 20px;
+      max-width: 767.98px;
+    }
+  
+    header {
+      flex-direction: column;
+      height: 200px;
+      width: 100%;
+    }
+   
+    .hebergements .presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 35px;       
+      }    
+    
+    .hebergements .presentation img {
+        width: 100%;
+        height: 200px;
+       }
+
+    .hebergements .presentation p {
+        font-size: 15px;
+       } 
+
+    .apropos h2 {
+        font-size: 20px;
+        font-weight: 700;
+       }
+
+    .section-title {
+        font-size: 32px;
+      }
+
+    .competences {
+      height: 650px;
+      padding: 35px 35px;
+    }
+
+    i p {
+      
+      width: 15px;
+      height: 15px;
+    }
+  
+    .hebergements {
+      width: 100%;
+    }
+
+    .hebergements-cards {
+      height: 100%;
+      
+    }
+
+    .hebergements .card img {     
+      width: 80%;
+      height: 260px;
+      padding-top: 20px;
+    }
+  
+    .hebergements-cards .card {      
+      width: 80%;
+      margin-bottom: 35px;
+      margin-top: 20px;
+      align-items: center;
+      height: 340px;
+      background-color: white;
+      
+    }
+   
+  
+    .footer {
+      flex-direction: column;
+      height: 461px;
+    }
+  
+    .a-propos,
+    .nos-hebergements,
+    .assistance {
+      width: 100%;
+      margin: 0;
+    }
+  }
