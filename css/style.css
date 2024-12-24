@@ -9,20 +9,18 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    /*background-color:#E1FEC5	;*/
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/12/17/59/stones-8249322_640.jpg");
   }
   
   .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 30px;
-    box-sizing: border-box;
-    height: 3200px;
-    background-attachment: fixed; 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-image: url("https://cdn.pixabay.com/photo/2023/09/12/17/59/stones-8249322_640.jpg");
   }
   
   a {
@@ -146,8 +144,8 @@
   }
   
   .hebergements-cards .card img:hover{
-      -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
     transform: scale(1.5); 
   }
 
