@@ -49,6 +49,7 @@
    .hebergements .presentation img {
     width: 220px;
     height:auto;
+    border-radius: 15px 15px 15px 15px;
    }
 
    .hebergements .presentation p {
